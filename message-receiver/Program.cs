@@ -3,9 +3,9 @@ using Azure.Messaging.ServiceBus;
 
 public class Receiver //Consumidor
 {
-    static string connString = "Endpoint=sb://sb-teste-ivo.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=GQjH8vFzPYC03olK2veqvPOEjNoB7iSsnOcyuGuZkwU=";
-    static string topicName = "norgelabs";
-    static string fila = "reembolso";
+    static string connString = "Endpoint=sb://clinamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xTyRmgGwg8cvb8eEogQLaxKLXohu1dW7oHN5Ui4mgWc=";
+    static string topicName = "topic01";
+    static string fila = "geral";
     static async Task Main(string[] args)
     {
         var client = new ServiceBusClient(connString);
